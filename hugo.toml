@@ -8,6 +8,7 @@ theme = 'PaperMod'
 disableSpecial1stPost = true
 author = 'U+1F198'
 ShowShareButtons = true
+images = ["twittercard.png"]
 
 [menu]
 [[menu.main]]
