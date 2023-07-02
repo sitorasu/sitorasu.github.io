@@ -1,4 +1,4 @@
-baseURL = 'http://sitorasu.github.io'
+baseURL = 'https://sitorasu.github.io'
 languageCode = 'ja-jp'
 hasCJKLanguage = true
 title = '🌊ボトルメール'
@@ -7,6 +7,7 @@ theme = 'PaperMod'
 [Params]
 disableSpecial1stPost = true
 author = 'U+1F198'
+ShowShareButtons = true
 
 [menu]
 [[menu.main]]
