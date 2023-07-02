@@ -3,4 +3,4 @@
 TODO:
 - [ ] add cover image
 - [ ] support emoji
-= [ ] add my profile
+- [ ] add my profile
