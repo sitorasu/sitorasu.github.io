@@ -1,0 +1,16 @@
+baseURL = 'http://example.org/'
+languageCode = 'ja-jp'
+hasCJKLanguage = true
+title = '🌊ボトルメール'
+theme = 'PaperMod'
+
+[Params]
+disableSpecial1stPost = true
+author = 'U+1F198'
+
+[menu]
+[[menu.main]]
+identifier = 'Tags'
+name = "Tags"
+url = "/tags/"
+weight = 10
