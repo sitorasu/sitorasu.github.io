@@ -14,6 +14,18 @@ outputs:
     - RSS
     - JSON
 
+menu:
+  main:
+    - name: Archive
+      url: archives
+      weight: 5
+    - name: Search
+      url: search
+      weight: 10
+    - name: Tags
+      url: tags
+      weight: 10
+
 params:
   homeInfoParams:
     title: "sitorasu"
@@ -46,6 +58,7 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
   images: ["images/card/logo.png"]
+  DateFormat: '2006-01-02'
 
   assets:
     favicon: '/favicon.ico'
