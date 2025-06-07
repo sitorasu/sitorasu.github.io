@@ -1,0 +1,55 @@
+baseURL: https://sitorasu.github.io/
+languageCode: ja-jp
+title: ボトルメール
+hasCJKLanguage: true
+enableGitInfo: true  # 記事の更新日をGitから自動取得するのに必要
+
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  homeInfoParams:
+    title: "sitorasu"
+    Content: "sitorasuのホームページです。"
+
+  socialIcons:
+    - name: vrchat
+      title: VRChat
+      url: https://vrchat.com/home/user/usr_abfbf606-e1c0-4885-8c22-92044091eca4
+    - name: github
+      title: GitHub
+      url: https://github.com/sitorasu
+    - name: x
+      title: X
+      url: https://x.com/s1torasu
+    - name: mixi2
+      title: mixi2
+      url: https://mixi.social/@sitorasu
+    - name: rss
+      title: mixi2
+      url: index.xml
+  
+  label:
+    icon: '/apple-touch-icon.png'
+    iconHeight: 35
+
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  images: ["images/card/logo.png"]
+
+  assets:
+    favicon: '/favicon.ico'
+    favicon16x16: '/favicon-16x16.png'
+    favicon32x32: '/favicon-32x32.png'
+    apple_touch_icon: '/apple-touch-icon.png'
+
