@@ -2,6 +2,7 @@
 
 ```
 git clone git@github.com:sitorasu/sitorasu.github.io.git
+cd sitorasu.github.io
 git config --local core.hooksPath .githooks
 ```
 
