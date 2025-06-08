@@ -1,7 +1,8 @@
 ---
+lastmod: 2025-06-08T22:32:15+09:00
 author: "Hugo Authors"
 title: "Markdown Syntax Guide"
-date: "2019-03-10"
+date: "2019-03-11"
 description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags: ["markdown", "css", "html", "themes"]
 categories: ["themes", "syntax"]

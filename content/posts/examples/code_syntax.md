@@ -1,7 +1,8 @@
 ---
+lastmod: 2025-06-08T22:32:15+09:00
 author: ["Aditya Telange"]
 title: "Code Syntax Guide"
-date: "2019-03-11"
+date: "2019-03-10"
 description: "Sample article showcasing basic code syntax and formatting for HTML elements."
 summary: "Sample article showcasing basic code syntax and formatting for HTML elements."
 tags: ["markdown", "syntax", "code", "gist"]
