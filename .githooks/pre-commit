@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # 追加(A)した記事のdateフィールド（作成日）を更新
-added=$(git diff --cached --name-only --diff-filter=A *.md)
+added=$(git diff --cached --name-only --diff-filter=A content/posts/*.md)
 python3 scripts/update-frontmatter-date.py --target date ${added}
 
 # 変更(M)した記事のMarkdownファイルのdateフィールド（作成日）を更新
-modified=$(git diff --cached --name-only --diff-filter=M *.md)
+modified=$(git diff --cached --name-only --diff-filter=M content/posts/*.md)
 python3 scripts/update-frontmatter-date.py --target lastmod ${modified}
 
 # 変更をステージング
