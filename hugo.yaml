@@ -28,7 +28,7 @@ menu:
 
 params:
   homeInfoParams:
-    title: "ようこそ！"
+    title: "ようこそ"
     Content: "sitorasuのホームページです。"
 
   socialIcons:
@@ -67,11 +67,10 @@ params:
     favicon32x32: '/favicon-32x32.png'
     apple_touch_icon: '/apple-touch-icon.png'
 
-frontmatter:
-  lastmod:
-    - lastmod
-    - :git
-
 markup:
   highlight:
     style: base16-snazzy
+
+caches:
+  images:
+    dir: :cacheDir/images

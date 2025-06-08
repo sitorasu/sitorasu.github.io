@@ -1,5 +1,5 @@
 ---
-lastmod: 2025-06-08T21:40:28+09:00
+lastmod: 2025-06-08T22:07:57+09:00
 date: '2025-06-08T05:45:50+09:00'
 draft: false
 title: 'PaperModの初期設定'
@@ -95,7 +95,11 @@ Git Hooksののpre-commitの仕組みで実現する。仕様は以下のよう�
 
 このコードを丸ごとコピペしてくださいというコードの中に警告のロジックが入っているのでそれは取り除かないと警告が消えないことに注意。
 
+## GitHub Actionsの登録
+
+[Host on GitHub Pages](https://gohugo.io/host-and-deploy/host-on-github-pages/)をそのまんまやる
+
 ## TODO: 目次をリッチにする
 
-サイドバーで追従するやつにしたい
+サイドバーで追従するやつにしたい。
 
