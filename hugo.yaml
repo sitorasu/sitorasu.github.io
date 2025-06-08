@@ -58,7 +58,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowToc: true
-  images: ["/card/logo.png"]
+  images: ["images/card/logo.png"]
   DateFormat: '2006-01-02'
 
   assets:
