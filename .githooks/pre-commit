@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# 追加(A)のMarkdownファイル一覧を取得
+git diff --name-only --diff-filter=A *.md
+

@@ -1,0 +1,39 @@
+- id: prev_page
+  translation: "次の記事"
+
+- id: next_page
+  translation: "前の記事"
+
+- id: read_time
+  translation:
+    one : "1 min"
+    other: "{{ .Count }} min"
+
+- id: words
+  translation:
+    one : "word"
+    other: "{{ .Count }} words"
+
+- id: toc
+  translation: "目次"
+
+- id: translations
+  translation: "Translations"
+
+- id: home
+  translation: "Home"
+
+- id: edit_post
+  translation: "Edit"
+
+- id: code_copy
+  translation: "Copy"
+
+- id: code_copied
+  translation: "Copied!"
+
+- id: date
+  translation: "作成日"
+
+- id: lastmod
+  translation: "最終更新日"

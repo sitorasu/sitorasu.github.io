@@ -1,8 +1,8 @@
 baseURL: https://sitorasu.github.io/
 languageCode: ja-jp
 title: ボトルメール
+defaultContentLanguage: ja
 hasCJKLanguage: true
-enableGitInfo: true  # 記事の更新日をGitから自動取得するのに必要
 
 module:
   imports:
@@ -28,7 +28,7 @@ menu:
 
 params:
   homeInfoParams:
-    title: "sitorasu"
+    title: "ようこそ！"
     Content: "sitorasuのホームページです。"
 
   socialIcons:
@@ -45,7 +45,7 @@ params:
       title: mixi2
       url: https://mixi.social/@sitorasu
     - name: rss
-      title: mixi2
+      title: RSS
       url: index.xml
   
   label:
@@ -53,6 +53,7 @@ params:
     iconHeight: 35
 
   ShowShareButtons: true
+  ShareButtons: ["x"] 
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
@@ -66,3 +67,11 @@ params:
     favicon32x32: '/favicon-32x32.png'
     apple_touch_icon: '/apple-touch-icon.png'
 
+frontmatter:
+  lastmod:
+    - lastmod
+    - :git
+
+markup:
+  highlight:
+    style: base16-snazzy

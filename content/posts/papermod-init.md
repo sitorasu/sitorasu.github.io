@@ -4,7 +4,7 @@ draft: false
 title: 'PaperModの初期設定'
 tags:
     - Hugo
-    - Hugo/PaperMod
+    - Hugo-PaperMod
 ---
 
 ## PaperModのインストール
