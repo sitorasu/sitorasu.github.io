@@ -1,5 +1,5 @@
 ---
-lastmod: 2025-06-08T22:07:57+09:00
+lastmod: 2025-06-09T00:27:58+09:00
 date: '2025-06-08T05:45:50+09:00'
 draft: false
 title: 'PaperModの初期設定'
@@ -70,7 +70,16 @@ Hugo Moduleの依存関係はプロジェクトのルートの`go.mod`という�
 
 ## 投稿日と最終更新日をコミット時に自動設定する
 
-Git Hooksののpre-commitの仕組みで実現する。仕様は以下のようにする。
+最終更新日だけなら`hugo.yaml`に以下を書くだけで実現できる。
+
+```yaml
+enableGitInfo: true
+frontmatter:
+    lastmod:
+    - :git
+```
+
+ただ、これだと新規追加のファイルも問答無用で`lastmod`がついてしまって小回りが利かなかったので、Git Hooksののpre-commitで同じ仕組みを自作することにした。仕様は以下。
 
 - ステージングされた`.md`ファイルのうち、`content/posts`ディレクトリの下にあるものを処理の対象とする
 - 変更の種別がファイルの新規追加である`.md`ファイルについて
