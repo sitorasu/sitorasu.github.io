@@ -6,7 +6,7 @@ python3 scripts/update-frontmatter-date.py --target date ${added}
 
 # 変更(M)した記事のMarkdownファイルのdateフィールド（作成日）を更新
 modified=$(git diff --cached --name-only --diff-filter=M *.md)
-python3 scripts/update-frontmatter-date.py --target date ${modified}
+python3 scripts/update-frontmatter-date.py --target lastmod ${modified}
 
 # 変更をステージング
 git add ${added} ${modified}
