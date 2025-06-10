@@ -20,15 +20,16 @@ Hugoのテーマのインストール方法にはいくつかあるが、今回�
 空のサイトを作り、PaperModをインストールしてローカルで立ち上げるコマンドは以下の通り。
 
 ```
-hugo new site sitorasu.github.io --format yaml
-cd mysite
-hugo mod init github.com/sitorasu/sitorasu.github.io
-cat << EOS >> hugo.yaml
+# "sitorasu.github.io"と"github.com/sitorasu/sitorasu.github.io"の部分は自分の環境に合わせて置き換える
+$ hugo new site sitorasu.github.io --format yaml
+$ cd sitorasu.github.io
+$ hugo mod init github.com/sitorasu/sitorasu.github.io
+$ cat << EOS >> hugo.yaml
 module:
   imports:
   - path: github.com/adityatelange/hugo-PaperMod
 EOS
-hugo server
+$ hugo server
 ```
 
 `hugo server`で立ち上げたサイトを確認すると、PaperModのテーマが表示されているはず。
@@ -38,7 +39,7 @@ PaperMod Wikiの説明には`hugo.yaml`に`theme: ["PaperMod"]`を追加する�
 テーマをアップデートするには以下のコマンドを実行する。
 
 ```
-hugo mod get -u
+$ hugo mod get -u
 ```
 
 Hugo Moduleの依存関係はプロジェクトのルートの`go.mod`というファイルに記録されており、上記コマンドで更新される。`go.mod`は`hugo mod init`実行時に作成される。
@@ -107,6 +108,22 @@ frontmatter:
 ## GitHub Actionsの登録
 
 [Host on GitHub Pages](https://gohugo.io/host-and-deploy/host-on-github-pages/)をそのまんまやる
+
+## ファビコン・Twitterカードの設定
+
+設定ファイルの以下のフィールドで設定する。
+
+```yaml
+params:
+    # Twitterカードのパス。この例ではstatic/card/logo.pngに配置する。
+    images: ["/card/logo.png"]
+
+    # ファビコンのパス。この例ではstatic/favicon.pngに配置する。
+    assets:
+        favicon: '/favicon.ico'
+```
+
+`static`ではなく`assets`の下に配置した画像も参照できるかもしれないが、自分の環境ではうまくいかなかった。でも[PaperModのサンプルサイト](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite)では`assets`の下に置いてうまくいっている。謎。
 
 ## TODO: 目次をリッチにする
 
