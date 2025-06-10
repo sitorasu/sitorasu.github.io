@@ -1,5 +1,5 @@
 ---
-lastmod: 2025-06-10T22:26:54+09:00
+lastmod: 2025-06-10T23:41:00+09:00
 date: '2025-06-08T05:45:50+09:00'
 draft: false
 title: 'PaperModの初期設定'
@@ -118,7 +118,7 @@ params:
     # Twitterカードのパス。この例ではstatic/card/logo.pngに配置する。
     images: ["/card/logo.png"]
 
-    # ファビコンのパス。この例ではstatic/favicon.pngに配置する。
+    # ファビコンのパス。この例ではstatic/favicon.icoに配置する。
     assets:
         favicon: '/favicon.ico'
 ```
